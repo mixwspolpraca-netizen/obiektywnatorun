@@ -1,1 +1,677 @@
 
+<!DOCTYPE html>
+<html lang="pl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obiektyw na Toruń | Portfolio Fotograficzne</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0a0a0c',
+                            card: '#121215',
+                            border: '#26262b',
+                            accent: '#d4af37',
+                            ig: '#e1306c',
+                            tt: '#00f2fe'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0c;
+            color: #f4f4f5;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #26262b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3f3f46;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-amber-500/30 selection:text-amber-200">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-[#0a0a0c]/85 backdrop-blur-md border-b border-brand-border px-4 py-3.5">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="relative w-9 h-9 rounded-full p-[2px] bg-gradient-to-tr from-amber-500 via-pink-600 to-purple-600">
+                    <img src="logo.png" 
+                         alt="Obiektyw na Toruń" 
+                         class="w-full h-full object-cover rounded-full bg-brand-dark p-[1px]"
+                         loading="eager"
+                         onerror="this.onerror=null; this.src='https://placehold.co/100x100/121215/d4af37?text=ONT';">
+                </div>
+                <span class="font-bold text-base md:text-lg tracking-tight text-white group-hover:text-pink-500 transition-colors">
+                    obiektyw_na_torun
+                </span>
+            </a>
+
+            <div class="flex items-center gap-2 text-xs font-medium text-zinc-400 bg-zinc-900/80 px-3 py-1.5 rounded-full border border-brand-border">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Toruń, PL</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto w-full px-4 py-8 flex-grow">
+
+        <!-- Profile Header Section -->
+        <section class="bg-brand-card rounded-3xl p-6 md:p-8 border border-brand-border mb-10 shadow-2xl relative overflow-hidden">
+            <div class="absolute -top-24 -right-24 w-60 h-60 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-center md:items-start">
+                
+                <div class="relative shrink-0">
+                    <div class="w-32 h-32 md:w-36 md:h-36 rounded-full p-[3px] bg-gradient-to-tr from-amber-500 via-pink-600 to-purple-600 shadow-xl">
+                        <div class="w-full h-full bg-brand-dark rounded-full p-[2px] overflow-hidden">
+                            <img src="logo.png" 
+                                 alt="Obiektyw na Toruń Logo" 
+                                 class="w-full h-full object-cover rounded-full"
+                                 loading="eager"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/400x400/121215/d4af37?text=Obiektyw+na+Toru%C5%84';">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-grow text-center md:text-left">
+                    <div class="flex flex-col md:flex-row md:items-center gap-2 mb-2">
+                        <h1 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Obiektyw na Toruń</h1>
+                        <span class="text-xs font-semibold text-amber-400/90 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-500/20 w-max mx-auto md:mx-0">
+                            @obiektyw_na_torun
+                        </span>
+                    </div>
+
+                    <p class="text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-4">Fotograf</p>
+
+                    <ul class="space-y-1.5 text-sm text-zinc-300 max-w-xl mx-auto md:mx-0 mb-6 leading-relaxed">
+                        <li class="flex items-center justify-center md:justify-start gap-2">
+                            <span>📸</span>
+                            <span class="font-semibold text-white">Obiektyw na Toruń</span>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start gap-2">
+                            <span>🪐</span>
+                            <span class="font-semibold text-white">Toruń w kadrze</span>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start gap-2 text-zinc-400">
+                            <span class="text-amber-400">•</span>
+                            <span>Dzielnice, kultowe miejsca i ich historia</span>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start gap-2 text-zinc-400">
+                            <span class="text-amber-400">•</span>
+                            <span>Architektura • Światło • Klimat</span>
+                        </li>
+                    </ul>
+
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-6">
+                        <a href="https://www.instagram.com/obiektyw_na_torun?dlrf=MWY0eG9ja25reXNhMg==" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-600 hover:opacity-95 text-white font-medium text-xs transition-all shadow-md hover:scale-[1.02] active:scale-95">
+                            <div class="p-[1px] bg-white/30 rounded-md">
+                                <svg class="w-4 h-4 fill-none stroke-current stroke-[2]" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </div>
+                            <span>Instagram</span>
+                        </a>
+
+                        <a href="https://tiktok.com/@obiektyw_na_torun" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-zinc-900 border border-brand-border hover:border-zinc-700 text-white font-medium text-xs transition-all shadow-md hover:scale-[1.02] active:scale-95">
+                            <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.68 6.34 6.34 0 0 0 9.34 22a6.34 6.34 0 0 0 6.34-6.34V9.37a8.16 8.16 0 0 0 4.91 1.61V7.53a4.85 4.85 0 0 1-1-.84z"/>
+                            </svg>
+                            <span>TikTok</span>
+                        </a>
+
+                        <div class="relative flex items-center">
+                            <a href="mailto:mixwspolpraca@gmail.com" 
+                               class="flex items-center gap-2 px-3.5 py-2.5 rounded-l-xl bg-amber-500/10 border border-amber-500/30 hover:bg-amber-500/20 text-amber-300 font-medium text-xs transition-all">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
+                                <span>mixwspolpraca@gmail.com</span>
+                            </a>
+                            <button onclick="copyEmail()" id="copy-btn" title="Kopiuj adres e-mail"
+                                    class="flex items-center justify-center px-3 py-2.5 rounded-r-xl bg-amber-500/20 border border-l-0 border-amber-500/30 hover:bg-amber-500/30 text-amber-300 text-xs transition-all">
+                                <i data-lucide="copy" class="w-4 h-4"></i>
+                            </button>
+                            <span id="copy-toast" class="absolute -top-9 left-1/2 -translate-x-1/2 bg-amber-400 text-black text-[11px] font-bold px-2.5 py-1 rounded-md shadow-lg opacity-0 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                                Skopiowano adres e-mail!
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center md:justify-start gap-8 border-t border-brand-border pt-4 text-center">
+                        <div>
+                            <span class="block text-lg font-bold text-white" id="photo-count">17</span>
+                            <span class="text-xs text-zinc-400">Posty</span>
+                        </div>
+                        <div>
+                            <span class="block text-lg font-bold text-white">Toruń</span>
+                            <span class="text-xs text-zinc-400">Lokalizacja</span>
+                        </div>
+                        <div>
+                            <span class="block text-lg font-bold text-white">Współpraca</span>
+                            <span class="text-xs text-zinc-400">E-mail</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- OSTATNIE POSTY: STARE MIASTO -->
+        <section class="space-y-8">
+            <div class="flex items-center justify-between">
+                <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                    <i data-lucide="sparkles" class="w-5 h-5 text-amber-400"></i>
+                    <span>Ostatnie posty: Stare Miasto</span>
+                </h2>
+                <span class="text-xs text-zinc-500">Wyróżnione</span>
+            </div>
+
+            <div class="bg-brand-card rounded-3xl border border-brand-border p-6 md:p-8 space-y-6 shadow-xl">
+                <div>
+                    <div class="flex items-center gap-2 text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1">
+                        <i data-lucide="map-pin" class="w-4 h-4"></i>
+                        <span>Dzielnica historyczna</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Stare Miasto</h3>
+                    
+                    <div class="space-y-2 text-sm text-zinc-300 leading-relaxed bg-zinc-900/50 p-4 rounded-2xl border border-brand-border/60">
+                        <p>
+                            Historyczne centrum Torunia zachwyca wspaniałymi zespołami gotyckiej architektury – wśród nich wyróżniają się m.in. Ratusz Staromiejski oraz Kościół Mariacki, przedstawione na naszych zdjęciach. 🏛️
+                        </p>
+                        <p>
+                            Unikalna, średniowieczna tkanka miejska Torunia przetrwała próby czasu, w tym trudne najazdy szwedzkie z początku XVIII wieku. Do dziś stanowi niezwykle cenny zespół urbanistyczny dla pasjonatów historii i architektury. 📜
+                        </p>
+                        <p>
+                            Najstarsza część miasta, obejmująca Stare Miasto, Nowe Miasto oraz ruiny zamku krzyżackiego, znajduje się na liście światowego dziedzictwa UNESCO od 1997 roku. Stare Miasto zostało także wpisane do rejestru zabytków. 🏰✨
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Wstępny podgląd (Ratusz) -->
+                <div id="preview-container" class="grid grid-cols-1 max-w-sm mx-auto">
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="ratusz.webp" 
+                                 alt="Ratusz Staromiejski w Toruniu" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 loading="eager"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x600/121215/d4af37?text=Obiektyw+na+Toru%C5%84'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1">
+                                    <i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Ratusz Staromiejski</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Majestatyczna wieża Ratusza Staromiejskiego – serce gotyckiego Torunia.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Przycisk "Pokaż więcej" -->
+                <div id="show-more-wrapper" class="text-center pt-2">
+                    <button onclick="toggleGallery()" id="show-more-btn" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-500/10 border border-amber-500/30 hover:bg-amber-500/20 text-amber-300 font-semibold text-sm transition-all shadow-lg hover:scale-105 active:scale-95">
+                        <i data-lucide="eye" class="w-4 h-4"></i>
+                        <span>Pokaż więcej zdjęć</span>
+                    </button>
+                </div>
+
+                <!-- Pełna siatka zdjęć (domyślnie całkowicie ukryta, nie obciąża przeglądarki) -->
+                <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 hidden pt-4 border-t border-brand-border/60">
+
+                    <!-- Ratusz Staromiejski -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="ratusz.webp" alt="Ratusz Staromiejski" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Ratusz Staromiejski</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Majestatyczna wieża Ratusza Staromiejskiego – serce gotyckiego Torunia.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Panorama / Stare Miasto -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="Stare miasto.webp" alt="Panorama Starego Miasta" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Panorama Starego Miasta</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Widok na gotycką sylwetkę Starego Miasta od strony Wisły.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Klimatyczna uliczka -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="miedzyulicami.webp" alt="Klimatyczna uliczka" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Uliczka Staromiejska</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Niezwykły klimat wąskich, gotyckich uliczek Torunia.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Średniowieczne Mury -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="mury.webp" alt="Mury obronne" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Mury Obronne</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Zabytkowe mury obronne otaczające dawne miasto nad rzeką.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Rynek -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="rynek.webp" alt="Rynek w Toruniu" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Ceglany Kościół na Rynku</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Wspaniała strzelista wieża ceglanej architektury.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Skwer -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="skwer.webp" alt="Skwer prof. Bohdana Rymaszewskiego" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Skwer przy Murach</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Skwer prof. Bohdana Rymaszewskiego na tle historycznego muru.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Brama Klasztorna -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="cos.webp" alt="Brama Klasztorna" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Brama Klasztorna</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Gotycka brama miejska prowadząca w stronę Wisły.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dom Mikołaja Kopernika -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="dommikolajakopernik.webp" alt="Dom Mikołaja Kopernika" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Dom Mikołaja Kopernika</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Portal wejściowy zabytkowej gotyckiej kamienicy przy ulicy Kopernika.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Flisak -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="flisak.webp" alt="Pomnik Flisaka" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Pomnik Flisaka</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Słynna fontanna z flisakiem grającym na skrzypcach na Rynku Staromiejskim.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Gołąb -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="golab.webp" alt="Gołąb na bruku" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Klimat Staromiejskiego Bruku</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Detal staromiejskiej uliczki i klimatyczny toruński akcent.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Kamienica -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="jakisbudynek.webp" alt="Zabytkowa kamienica" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Zabytkowa Kamienica</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Bogato zdobiona fasada jednej z toruńskich kamienic w centrum miasta.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Kopernik -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="kopernik.webp" alt="Pomnik Mikołaja Kopernika" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Pomnik Mikołaja Kopernika</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Słynny pomnik wybitnego astronoma stojący w sercu Rynku Staromiejskiego.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Kościół Mariacki -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="kosciol.webp" alt="Kościół Mariacki" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Kościół Mariacki</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Gotycka świątynia Wniebowzięcia Najświętszej Marii Panny na Starym Mieście.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Kościół Akademicki -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="Kosciulakademicki.webp" alt="Kościół Akademicki Świętego Ducha" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Kościół Akademicki</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Wieża kościoła pw. Świętego Ducha wyróżniająca się na tle nieba.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Krzywa Wieża -->
+                    <article class="photo-card group bg-brand-dark rounded-2xl overflow-hidden border border-brand-border hover:border-amber-500/40 transition-all duration-300 hover:-translate-y-1 shadow-lg flex flex-col">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="openLightbox(this)">
+                            <img src="krzywawieza.webp" alt="Krzywa Wieża w Toruniu" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                <span class="text-xs font-medium text-amber-300 flex items-center gap-1"><i data-lucide="maximize-2" class="w-4 h-4"></i> Powiększ</span>
+                            </div>
+                        </div>
+                        <div class="p-4 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between text-xs text-amber-400/90 mb-1">
+                                    <span class="font-medium flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Stare Miasto</span>
+                                    <span class="text-zinc-500">2026</span>
+                                </div>
+                                <h3 class="font-semibold text-white text-base mb-1">Krzywa Wieża</h3>
+                                <p class="text-xs text-zinc-400 line-clamp-2">Średniowieczna baszta obronna odchylona od pionu, jeden z symboli Torunia.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="border-t border-brand-border bg-[#070709] py-8 px-4 mt-16">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+            <div>
+                <p class="text-sm font-semibold text-white">Obiektyw na Toruń</p>
+                <p class="text-xs text-zinc-500 mt-1">Wszelkie prawa zastrzeżone © 2026</p>
+            </div>
+            
+            <div class="flex items-center gap-3">
+                <a href="https://tiktok.com/@obiektyw_na_torun" target="_blank" class="p-2.5 rounded-full bg-brand-card border border-brand-border text-zinc-400 hover:text-white hover:border-zinc-700 transition-colors" title="TikTok">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.68 6.34 6.34 0 0 0 9.34 22a6.34 6.34 0 0 0 6.34-6.34V9.37a8.16 8.16 0 0 0 4.91 1.61V7.53a4.85 4.85 0 0 1-1-.84z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/obiektyw_na_torun?dlrf=MWY0eG9ja25reXNhMg==" target="_blank" class="p-2.5 rounded-full bg-brand-card border border-brand-border text-zinc-400 hover:text-pink-500 hover:border-pink-500/50 transition-colors flex items-center justify-center" title="Instagram">
+                    <svg class="w-4 h-4 fill-none stroke-current stroke-[2]" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="mailto:mixwspolpraca@gmail.com" class="p-2.5 rounded-full bg-brand-card border border-brand-border text-zinc-400 hover:text-amber-400 hover:border-amber-500/50 transition-colors" title="Napisz e-mail">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-50 bg-black/95 hidden backdrop-blur-xl flex items-center justify-center p-4" onclick="closeLightbox(event)">
+        <button onclick="forceCloseLightbox()" class="absolute top-4 right-4 text-zinc-400 hover:text-white p-2 rounded-full bg-zinc-900/80 border border-zinc-800 transition-colors">
+            <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+        
+        <div class="max-w-4xl w-full flex flex-col items-center" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="" class="max-h-[75vh] w-auto object-contain rounded-xl shadow-2xl border border-zinc-800">
+            <div class="mt-4 text-center">
+                <h4 id="lightbox-title" class="text-lg font-bold text-white"></h4>
+                <p id="lightbox-desc" class="text-sm text-zinc-400 mt-1 max-w-xl"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        lucide.createIcons();
+
+        function toggleGallery() {
+            const grid = document.getElementById('gallery-grid');
+            const preview = document.getElementById('preview-container');
+            const btn = document.getElementById('show-more-btn');
+
+            if (grid.classList.contains('hidden')) {
+                grid.classList.remove('hidden');
+                preview.classList.add('hidden');
+                btn.innerHTML = '<i data-lucide="eye-off" class="w-4 h-4"></i><span>Pokaż mniej</span>';
+            } else {
+                grid.classList.add('hidden');
+                preview.classList.remove('hidden');
+                btn.innerHTML = '<i data-lucide="eye" class="w-4 h-4"></i><span>Pokaż więcej zdjęć</span>';
+                window.scrollTo({ top: preview.offsetTop - 100, behavior: 'smooth' });
+            }
+            lucide.createIcons();
+        }
+
+        function copyEmail() {
+            const email = "mixwspolpraca@gmail.com";
+            const dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = email;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+
+            const toast = document.getElementById('copy-toast');
+            toast.classList.remove('opacity-0');
+            setTimeout(() => {
+                toast.classList.add('opacity-0');
+            }, 2000);
+        }
+
+        function openLightbox(element) {
+            const article = element.closest('article');
+            const imgSrc = element.querySelector('img').src;
+            const title = article.querySelector('h3').innerText;
+            const desc = article.querySelector('p').innerText;
+
+            document.getElementById('lightbox-img').src = imgSrc;
+            document.getElementById('lightbox-title').innerText = title;
+            document.getElementById('lightbox-desc').innerText = desc;
+
+            const modal = document.getElementById('lightbox');
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox(event) {
+            if (event.target.id === 'lightbox') forceCloseLightbox();
+        }
+
+        function forceCloseLightbox() {
+            const modal = document.getElementById('lightbox');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') forceCloseLightbox();
+        });
+    </script>
+</body>
+</html>
